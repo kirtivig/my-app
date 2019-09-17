@@ -1,0 +1,31 @@
+<button class='btn btn-primary' (click)="getData()">Click </button> 
+<div class="container">
+<table class="table table-striped">
+<thead>
+<tr>
+<th>User ID</th>
+<th>jobTitleName</th>
+<th>firstName</th>
+<th>lastName</th>
+<th>preferredFullName</th>
+<th>employeeCode</th>
+<th>region</th>
+<th>phoneNumber</th>
+<th>emailAddress</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let EmployeeData of EmployeeData">
+<td>{{EmployeeData.userId }}</td>
+<td>{{EmployeeData.jobTitleName }}</td>
+<td>{{EmployeeData.firstName }}</td>
+<td>{{EmployeeData.lastName }}</td>
+<td>{{EmployeeData.preferredFullName }}</td>
+<td>{{EmployeeData.employeeCode }}</td>
+<td>{{EmployeeData.region }}</td>
+<td>{{EmployeeData.phoneNumber }}</td>
+<td>{{EmployeeData.emailAddress }}</td>
+</tr>
+</tbody>
+</table>
+</div> 

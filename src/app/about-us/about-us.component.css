@@ -1,0 +1,28 @@
+div.card {
+  width: 200px;
+  height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  position: relative;
+  top: 80%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -100px;
+}
+
+div.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+}
+
+div.container {
+  padding: 5px;
+}
+
+
+
+
+

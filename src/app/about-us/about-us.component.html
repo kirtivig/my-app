@@ -1,0 +1,19 @@
+<input 
+  (keyup.enter)="createPost(title)" #title
+  type="text" class="form-control"/>
+<div class="card" *ngIf="showToolTip">
+    <div class="header">
+        <h1>SUCCESS</h1>
+      </div>
+      <div class="container">
+          <p>Record has been added</p>
+      </div>
+</div>
+<ul class="list-group">                                                      <!--(parent->child : Property/Input)-->
+<app-spinner [showSpinner]="flag"></app-spinner> <!--here spinner is child of about-us (child->parent : Event/Output)-->
+  <li *ngFor="let post of posts" class="list-group-item"> 
+    <button class="btn btn-primary" (click)="updatePost(post)">Update</button>&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-primary" (click)="deletePost(post)">Delete</button>&nbsp;&nbsp;
+    {{ post.title }} 
+  </li>
+</ul>
